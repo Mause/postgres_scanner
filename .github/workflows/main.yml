@@ -40,10 +40,6 @@ jobs:
       with:
         fetch-depth: 0
 
-    - name: Setup Postgres
-      run: |
-        psql -h postgres -U postgres -c "SELECT 42"
-
     - name: Install even more
       run: |
         curl -O https://bootstrap.pypa.io/pip/3.6/get-pip.py
